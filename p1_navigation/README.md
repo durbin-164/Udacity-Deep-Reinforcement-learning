@@ -34,11 +34,34 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
 
+### Descriptions
+- dqnet_agent.py: code for the agent used in the environment
+- model.py: code containing the Q-Network used as the function approximator by the agent
+- dqn.pth: saved model weights for the original DQN model
+- double_dqn.pth: saved model weights for the Double DQN model
+- dualing_dqn.pth: saved model weights for the Dueling Double DQN model
+- Navigation_solution.ipynb: notebook containing the solution
+- Navigation_Pixels.ipynb: notebook containing the code for the pixel-action problem (On going)
+
 ### Instructions
 
 Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
 
-### (Optional) Challenge: Learning from Pixels
+- DQN: If you want to run the original DQN algorithm, use the checkpoint dqn.pth for loading the trained model. Also, choose the parameter qnetwork as QNetwork while defining the agent and the parameter update_type as dqn.
+- Double DQN: If you want to run the Double DQN algorithm, use the checkpoint double_dqn.pth for loading the trained model. Also, choose the parameter qnetwork as QNetwork while defining the agent and the parameter update_type as double_dqn.
+- Dueling Double DQN: If you want to run the Dueling Double DQN algorithm, use the checkpoint dualing_dqn.pth for loading the trained model. Also, choose the parameter qnetwork as DuelingDQN while defining the agent and the parameter update_type as double_dqn.
+
+### Results 
+- DQN : The environment was solved in 481 episodes
+- Double DQN : The environment was solved in 395 episodes
+- Dualing DQN : The environment was solved in 380 episodes
+
+![DQN Rewards]['images/dqn.png']
+![Double DQN Rewards]['images/double_dqn.png']
+![Dualing DQN Rewards]['images/dualing_dqn.png']
+
+
+### Challenge: Learning from Pixels (On Going)
 
 After you have successfully completed the project, if you're looking for an additional challenge, you have come to the right place!  In the project, your agent learned from information such as its velocity, along with ray-based perception of objects around its forward direction.  A more challenging task would be to learn directly from pixels!
 
