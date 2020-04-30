@@ -49,15 +49,15 @@ class ReplayBuffer():
 #########Agent############################################
 
 class Agent():
-    def __init__(self,state_size, action_size,updated_type='dqn' ,seed=0):
+    def __init__(self,network, state_size, action_size,updated_type='dqn' ,seed=0):
         
         self.state_size = state_size
         self.action_size = action_size
         self.seed = random.seed(seed)
         self.updated_type = updated_type
         
-        self.qnetwork_local = QNetwork(state_size, action_size).to(device)
-        self.qnetwork_target = QNetwork(state_size, action_size).to(device)
+        self.qnetwork_local = network(state_size, action_size).to(device)
+        self.qnetwork_target = network(state_size, action_size).to(device)
         
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, seed)
         

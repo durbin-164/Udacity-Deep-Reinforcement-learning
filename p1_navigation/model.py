@@ -24,7 +24,7 @@ class QNetwork(nn.Module):
   
 
 
- class DuelingDQN(nn.Module):
+class DuelingDQN(nn.Module):
     def __init__(self,state_size, action_size):
         super(DuelingDQN, self).__init__()
         
