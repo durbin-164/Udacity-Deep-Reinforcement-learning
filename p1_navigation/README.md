@@ -56,10 +56,9 @@ Follow the instructions in `Navigation.ipynb` to get started with training your 
 - Double DQN : The environment was solved in 395 episodes
 - Dualing DQN : The environment was solved in 380 episodes
 
-![DQN Rewards]['images/dqn.png']
-![Double DQN Rewards]['images/double_dqn.png']
-![Dualing DQN Rewards]['images/dualing_dqn.png']
-
+DQN | Double DQN | Dualing DQN
+| --- |--- | ---|
+![Alt text](results/dqn.png?raw=true "Title")|![Alt text](results/double_dqn.png?raw=true "Title")|![Alt text](results/dualing_dqn.png?raw=true "Title")
 
 ### Challenge: Learning from Pixels (On Going)
 
