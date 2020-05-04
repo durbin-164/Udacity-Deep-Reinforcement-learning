@@ -36,7 +36,7 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ### Descriptions
 - dqnet_agent.py: code for the agent used in the environment
-- model.py: code containing the Q-Network used as the function approximator by the agent
+- model.py: code containing the Q-Network and Dualing Q-Network used as the function approximator by the agent
 - dqn.pth: saved model weights for the original DQN model
 - double_dqn.pth: saved model weights for the Double DQN model
 - dualing_dqn.pth: saved model weights for the Dueling Double DQN model
@@ -56,10 +56,9 @@ Follow the instructions in `Navigation.ipynb` to get started with training your 
 - Double DQN : The environment was solved in 395 episodes
 - Dualing DQN : The environment was solved in 380 episodes
 
-![DQN Rewards]['images/dqn.png']
-![Double DQN Rewards]['images/double_dqn.png']
-![Dualing DQN Rewards]['images/dualing_dqn.png']
-
+DQN | Double DQN | Dualing DQN
+| --- |--- | ---|
+![Alt text](results/dqn.png?raw=true "Title")|![Alt text](results/double_dqn.png?raw=true "Title")|![Alt text](results/dualing_dqn.png?raw=true "Title")
 
 ### Challenge: Learning from Pixels (On Going)
 
